@@ -7,8 +7,14 @@
                 color: red;
             }
         </style>
+        {% if 'username' in session %}
+        <a href='/logout'>Log Out</a>
+        {% else %}
+        <a href='/login'>Log In</a>
+        {% endif %} 
+        <a href='/'>Home</a>
+        <a href='/blog'>All Blogs</a>
         <a href='/new-blog'>New Blog</a>
-        <a href='/'>Main Page</a>
     </head>
 <body>
 
